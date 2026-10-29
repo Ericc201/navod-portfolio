@@ -48,3 +48,4 @@ export const SITE_CONFIG = {
     { label: 'Contact', href: '#contact' },
   ],
 };
+

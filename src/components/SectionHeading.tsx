@@ -41,3 +41,4 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     </motion.div>
   );
 };
+

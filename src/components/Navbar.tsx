@@ -62,22 +62,14 @@ export const Navbar: React.FC = () => {
           <a
             href="#home"
             onClick={(e) => scrollToSection(e, '#home')}
-            className="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg"
+            className="group flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 via-blue-500/10 to-purple-500/20 border border-cyan-500/30 group-hover:border-cyan-400 transition-colors">
-              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400 text-lg tracking-wider">
-                {SITE_CONFIG.monogram}
-              </span>
-              <div className="absolute inset-0 rounded-xl bg-cyan-500/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-white text-base tracking-tight leading-tight group-hover:text-cyan-300 transition-colors">
-                {SITE_CONFIG.name}
-              </span>
-              <span className="text-[11px] font-medium text-slate-400">
-                {SITE_CONFIG.role}
-              </span>
-            </div>
+            <span className="font-bold text-white text-base sm:text-lg tracking-tight leading-tight group-hover:text-cyan-300 transition-colors">
+              {SITE_CONFIG.name}
+            </span>
+            <span className="text-[11px] font-medium text-slate-400">
+              {SITE_CONFIG.role}
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -212,3 +204,4 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
+

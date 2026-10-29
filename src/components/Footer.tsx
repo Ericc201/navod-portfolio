@@ -37,11 +37,8 @@ export const Footer: React.FC = () => {
             <a
               href="#home"
               onClick={(e) => scrollToSection(e, '#home')}
-              className="flex items-center gap-2.5 group"
+              className="group block"
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-black text-sm">
-                {SITE_CONFIG.monogram}
-              </div>
               <span className="font-bold text-white text-base tracking-tight group-hover:text-cyan-300 transition-colors">
                 {SITE_CONFIG.name}
               </span>

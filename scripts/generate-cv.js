@@ -142,3 +142,4 @@ if (!fs.existsSync(outDir)) {
 }
 fs.writeFileSync(path.join(outDir, 'Navod_Lakshitha_CV.pdf'), pdfDoc, 'utf8');
 console.log('Successfully generated public/cv/Navod_Lakshitha_CV.pdf');
+
