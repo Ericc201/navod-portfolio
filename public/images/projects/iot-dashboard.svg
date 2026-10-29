@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="iotBg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#060C17"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="iotCard" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#090D16"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#iotBg)"/>
+
+  <!-- Browser/Dashboard Window -->
+  <g transform="translate(80, 45)">
+    <rect width="640" height="410" rx="14" fill="#0B0F19" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- App Header -->
+    <rect width="640" height="46" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="24" cy="23" r="5" fill="#EF4444"/>
+    <circle cx="40" cy="23" r="5" fill="#F59E0B"/>
+    <circle cx="56" cy="23" r="5" fill="#10B981"/>
+
+    <rect x="90" y="16" width="120" height="14" rx="4" fill="#38BDF8" opacity="0.9"/>
+    
+    <!-- Real-time Connected status badge -->
+    <rect x="490" y="14" width="130" height="20" rx="10" fill="#064E3B" stroke="#059669" stroke-width="1"/>
+    <circle cx="505" cy="24" r="4" fill="#34D399"/>
+    <rect x="516" y="21" width="90" height="6" rx="3" fill="#A7F3D0"/>
+
+    <!-- Sidebar Mini -->
+    <rect x="15" y="60" width="50" height="335" rx="8" fill="#0D1322"/>
+    <circle cx="40" cy="85" r="10" fill="#0284C7"/>
+    <circle cx="40" cy="125" r="10" fill="#1E293B"/>
+    <circle cx="40" cy="165" r="10" fill="#1E293B"/>
+    <circle cx="40" cy="205" r="10" fill="#1E293B"/>
+
+    <!-- Top Telemetry KPI Cards -->
+    <g transform="translate(80, 60)">
+      <!-- KPI 1: Active Devices -->
+      <rect x="0" y="0" width="168" height="75" rx="10" fill="url(#iotCard)" stroke="#1E293B"/>
+      <rect x="16" y="16" width="70" height="7" rx="3.5" fill="#94A3B8"/>
+      <rect x="16" y="32" width="45" height="18" rx="4" fill="#38BDF8"/>
+      <rect x="16" y="56" width="110" height="5" rx="2.5" fill="#10B981"/>
+
+      <!-- KPI 2: MQTT Broker Stream -->
+      <rect x="184" y="0" width="168" height="75" rx="10" fill="url(#iotCard)" stroke="#1E293B"/>
+      <rect x="200" y="16" width="80" height="7" rx="3.5" fill="#94A3B8"/>
+      <rect x="200" y="32" width="60" height="18" rx="4" fill="#818CF8"/>
+      <rect x="200" y="56" width="90" height="5" rx="2.5" fill="#64748B"/>
+
+      <!-- KPI 3: Alert Status -->
+      <rect x="368" y="0" width="176" height="75" rx="10" fill="url(#iotCard)" stroke="#1E293B"/>
+      <rect x="384" y="16" width="75" height="7" rx="3.5" fill="#94A3B8"/>
+      <rect x="384" y="32" width="55" height="18" rx="4" fill="#34D399"/>
+      <rect x="384" y="56" width="120" height="5" rx="2.5" fill="#10B981"/>
+    </g>
+
+    <!-- Main Live Waveform Chart -->
+    <g transform="translate(80, 150)">
+      <rect width="544" height="150" rx="10" fill="url(#iotCard)" stroke="#1E293B"/>
+      <rect x="16" y="16" width="140" height="8" rx="4" fill="#E2E8F0"/>
+      <rect x="16" y="28" width="90" height="5" rx="2.5" fill="#64748B"/>
+
+      <!-- Chart grid lines -->
+      <line x1="20" y1="60" x2="524" y2="60" stroke="#1E293B" stroke-dasharray="3 3"/>
+      <line x1="20" y1="90" x2="524" y2="90" stroke="#1E293B" stroke-dasharray="3 3"/>
+      <line x1="20" y1="120" x2="524" y2="120" stroke="#1E293B" stroke-dasharray="3 3"/>
+
+      <!-- Realtime sensor waveform line -->
+      <path d="M 20 110 Q 60 70 100 95 T 180 80 T 260 115 T 340 60 T 420 90 T 500 70 L 524 85" fill="none" stroke="url(#cyanLine)" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Live sensor pulse dot -->
+      <circle cx="500" cy="70" r="5" fill="#38BDF8"/>
+      <circle cx="500" cy="70" r="10" fill="#38BDF8" opacity="0.3"/>
+    </g>
+
+    <!-- Bottom Device Table / Activity Log -->
+    <g transform="translate(80, 312)">
+      <rect width="544" height="80" rx="10" fill="url(#iotCard)" stroke="#1E293B"/>
+      <rect x="20" y="14" width="70" height="6" rx="3" fill="#64748B"/>
+      <rect x="140" y="14" width="60" height="6" rx="3" fill="#64748B"/>
+      <rect x="260" y="14" width="60" height="6" rx="3" fill="#64748B"/>
+      <rect x="400" y="14" width="70" height="6" rx="3" fill="#64748B"/>
+
+      <line x1="16" y1="28" x2="528" y2="28" stroke="#1E293B"/>
+
+      <rect x="20" y="38" width="90" height="7" rx="3.5" fill="#E2E8F0"/>
+      <circle cx="145" cy="41" r="3.5" fill="#10B981"/>
+      <rect x="155" y="38" width="50" height="7" rx="3.5" fill="#94A3B8"/>
+      <rect x="260" y="38" width="45" height="7" rx="3.5" fill="#38BDF8"/>
+      <rect x="400" y="38" width="80" height="7" rx="3.5" fill="#94A3B8"/>
+
+      <rect x="20" y="58" width="80" height="7" rx="3.5" fill="#E2E8F0"/>
+      <circle cx="145" cy="61" r="3.5" fill="#10B981"/>
+      <rect x="155" y="58" width="50" height="7" rx="3.5" fill="#94A3B8"/>
+      <rect x="260" y="58" width="45" height="7" rx="3.5" fill="#38BDF8"/>
+      <rect x="400" y="58" width="80" height="7" rx="3.5" fill="#94A3B8"/>
+    </g>
+  </g>
+</svg>

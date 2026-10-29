@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0F19"/>
+      <stop offset="1" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="glowViolet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A855F7" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bg2)"/>
+  
+  <g opacity="0.08" stroke="#A855F7" stroke-width="1">
+    <circle cx="400" cy="250" r="180" stroke-dasharray="6 6"/>
+    <circle cx="400" cy="250" r="260" stroke-dasharray="4 4"/>
+  </g>
+
+  <circle cx="400" cy="240" r="160" fill="#7C3AED" opacity="0.12" filter="blur(60px)"/>
+
+  <!-- Mobile Frame -->
+  <rect x="270" y="50" width="260" height="400" rx="36" fill="#111827" stroke="#334155" stroke-width="4"/>
+  <rect x="280" y="62" width="240" height="376" rx="28" fill="#090D16"/>
+  
+  <!-- Notch -->
+  <rect x="360" y="72" width="80" height="14" rx="7" fill="#1E293B"/>
+
+  <!-- Chat Header -->
+  <rect x="295" y="98" width="210" height="46" rx="12" fill="#1E1B4B" stroke="#4338CA" stroke-width="1"/>
+  <circle cx="320" cy="121" r="12" fill="url(#aiGrad)"/>
+  <path d="M316 121L324 117M320 115V127" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="340" y="113" width="70" height="7" rx="3.5" fill="#E2E8F0"/>
+  <rect x="340" y="124" width="45" height="5" rx="2.5" fill="#A5B4FC"/>
+  <circle cx="485" cy="121" r="4" fill="#10B981"/>
+
+  <!-- Chat Messages -->
+  <!-- User Message -->
+  <rect x="365" y="160" width="138" height="40" rx="14" fill="url(#userGrad)"/>
+  <rect x="377" y="172" width="90" height="6" rx="3" fill="#FFFFFF"/>
+  <rect x="377" y="183" width="60" height="5" rx="2.5" fill="#E0F2FE"/>
+
+  <!-- AI Response 1 -->
+  <rect x="295" y="215" width="165" height="56" rx="14" fill="#1E293B" stroke="#334155"/>
+  <circle cx="310" cy="230" r="5" fill="#A855F7"/>
+  <rect x="323" y="228" width="90" height="6" rx="3" fill="#E2E8F0"/>
+  <rect x="307" y="242" width="138" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="307" y="253" width="95" height="5" rx="2.5" fill="#94A3B8"/>
+
+  <!-- User Message 2 -->
+  <rect x="350" y="286" width="153" height="38" rx="14" fill="url(#userGrad)"/>
+  <rect x="362" y="297" width="115" height="6" rx="3" fill="#FFFFFF"/>
+  <rect x="362" y="308" width="70" height="5" rx="2.5" fill="#E0F2FE"/>
+
+  <!-- AI Response 2 (Typing/Streaming) -->
+  <rect x="295" y="338" width="175" height="42" rx="14" fill="#1E293B" stroke="#4338CA" stroke-dasharray="4 2"/>
+  <circle cx="315" cy="359" r="3.5" fill="#A855F7"/>
+  <circle cx="328" cy="359" r="3.5" fill="#C084FC"/>
+  <circle cx="341" cy="359" r="3.5" fill="#E879F9"/>
+  <rect x="356" y="356" width="95" height="6" rx="3" fill="#C7D2FE"/>
+
+  <!-- Input Bar -->
+  <rect x="295" y="392" width="210" height="34" rx="17" fill="#1E293B" stroke="#334155"/>
+  <rect x="310" y="405" width="120" height="7" rx="3.5" fill="#64748B"/>
+  <circle cx="487" cy="409" r="11" fill="url(#aiGrad)"/>
+  <path d="M484 409L489 409M487 406L489 409L487 412" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Left Pill (DeepSeek API) -->
+  <g transform="translate(70, 190)">
+    <rect width="170" height="72" rx="14" fill="#0F172A" stroke="#7C3AED" stroke-width="1.2" opacity="0.95"/>
+    <rect x="18" y="16" width="70" height="8" rx="4" fill="#C084FC"/>
+    <rect x="18" y="30" width="120" height="5" rx="2.5" fill="#94A3B8"/>
+    <rect x="18" y="42" width="80" height="16" rx="8" fill="#3B0764"/>
+    <rect x="28" y="47" width="55" height="6" rx="3" fill="#E9D5FF"/>
+  </g>
+
+  <!-- Right Pill (SQLite Sync) -->
+  <g transform="translate(560, 240)">
+    <rect width="165" height="76" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2" opacity="0.95"/>
+    <rect x="18" y="18" width="60" height="8" rx="4" fill="#38BDF8"/>
+    <rect x="18" y="32" width="125" height="5" rx="2.5" fill="#94A3B8"/>
+    <rect x="18" y="44" width="75" height="16" rx="8" fill="#0C4A6E"/>
+    <rect x="28" y="49" width="50" height="6" rx="3" fill="#BAE6FD"/>
+  </g>
+</svg>
